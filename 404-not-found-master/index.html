@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Error:404</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             background-color: #fff;
+             height: 80vh;
+             overflow: hidden;
+        }
+        header{
+            width: 100%;
+            height: 65px;
+            display: flex;
+            flex-direction: column;
+        }
+        .show{
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+        }
+        img{
+            height: 450px;
+            width: 400px;
+            margin-top: 80px;
+        }
+        .head{
+            color:#3a2f7b;
+            text-align:center;
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+        .news{
+            display: flex;
+            flex-flow: column wrap;
+            width: 450px;
+            align-items: center;
+            justify-content: center;
+        }
+        .news h1{
+            font-weight: bold;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .news p{
+            line-height: 1.9em;
+            font-size: 1.2rem;
+            padding-top: 30px;
+            font-family: "Poppins",sans-serif;
+        }
+
+        .btn{
+            display: block;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 15px 20px;
+            color: #fff;
+            background-color: #333;
+            margin-top: 40px;
+        }
+        @media only screen and (max-width: 900px)  {
+            .show{
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            img{
+                width: 250px;
+                height: 250px ;
+            }
+            .news h1{
+                font-size: 2.2rem;
+            }
+            .news p{font-size: 1.2rem;}
+        }
+
+        @media only screen and  (max-width: 500px ) {
+            .show{
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-items: center;
+            }
+            img{
+                width: 200px;
+                height: 250px;
+            }
+            .news h1{
+                font-size: 1.5rem;
+            }
+            .news p{
+                font-size:0.9rem ;
+                padding-left: 20px;    
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h4 class="head" >404 Not found !</h4>
+        <div class="show">
+            <img src="./Scarecrow.png" alt="Scarecrow">
+            <div class="news">
+                <h1>I have bad news for you </h1>
+                <p>The page that you are looking for does not exist or might be temporarily removed.</p>
+                <input class="btn" type="submit" value="back to Homepage">
+            </div>
+        </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
